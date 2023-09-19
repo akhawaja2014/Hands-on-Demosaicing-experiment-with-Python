@@ -1,6 +1,8 @@
 # Demosaicing RGB image with Python using Bilinear Interpolation
 
-This toolkit provides utilities to process raw images, particularly those that have a Bayer pattern. The functions in this toolkit allow you to read raw TIFF images, display them, extract channels, normalize intensities, perform white balancing, and demosaic the image using bilinear interpolation.
+Demosaicing is a digital image process used to reconstruct a full-color image from the incomplete color samples output by an image sensor overlaid with a color filter array (CFA). It is an essential step in the processing of raw images in any digital camera.
+
+This code provides utilities to process raw images. The functions in this code allow you to read raw TIFF images, display them, extract channels, normalize intensities, perform white balancing, and **demosaic** the image using bilinear interpolation.
 
 ## Features
 
@@ -77,9 +79,6 @@ pip install matplotlib numpy scipy Pillow opencv-python
 - `bilinear(im)`: Applies bilinear interpolation demosaicing on an image.
 - Visualization functions like `display_raw_image(raw_image_path)`, `display_bayer_pattern(im)`, `display_red_channel(image)`, etc. are used to visualize various stages of the raw image processing.
 
-### Notes
-
-The toolkit assumes that the input image is in RGGB Bayer pattern. Adjustments may be needed for other patterns.
 
 
 ### Contact
