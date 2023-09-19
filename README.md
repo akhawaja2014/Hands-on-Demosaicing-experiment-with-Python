@@ -18,7 +18,6 @@ This toolkit provides utilities to process raw images, particularly those that h
 - numpy
 - scipy
 - Pillow (PIL)
-- matplotlib.colors
 
 ## Installation
 
