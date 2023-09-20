@@ -141,7 +141,9 @@ pip install matplotlib numpy scipy Pillow opencv-python
   
 
 
+## Conclusion
 
+This repository has provided an overview of the process of demosaicing RGB images using Python, specifically employing bilinear interpolation. Demosaicing is a crucial step in digital image processing, allowing us to reconstruct full-color images from the incomplete color samples captured by image sensors overlaid with a color filter array (CFA).
 
 ### Contact
 
