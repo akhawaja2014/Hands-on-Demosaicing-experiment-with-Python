@@ -89,6 +89,7 @@ pip install matplotlib numpy scipy Pillow opencv-python
 - `bayer(im)`: Decodes an RGGB Bayer pattern image.
    The Bayer pattern, also known as the Bayer filter, is a color filter array (CFA) used in many digital imaging devices, including digital cameras and smartphone cameras. It's named after its inventor, Bryce Bayer, who developed this pattern while working at Eastman     Kodak in the 1970s. The Bayer pattern is a common method for capturing and reproducing color in digital images. The Bayer pattern consists of a grid of color filters placed over the image sensor's pixels. Each pixel in the sensor is covered by one of these color       filters, which are typically red, green, or blue. The Bayer pattern usually consists of 50% green filters, 25% red filters, and 25% blue filters, arranged in a specific repeating pattern. The most common arrangement for a Bayer filter is as follows, where "R"          stands for red, "G" stands for green, and "B" stands for blue. Here is what the Bayer Color Filter Array (CFA) looks like:
 
+    ![Bayer Pattern](https://github.com/akhawaja2014/Hands-on-Demosaicing-experiment-with-Python/blob/master/figures/bayercfa.PNG)
 
     The Bayer Pattern for the raw image looks like this. The intensities of the color represent the amount of light that has been captured by the sensor in that respective channel.
   
