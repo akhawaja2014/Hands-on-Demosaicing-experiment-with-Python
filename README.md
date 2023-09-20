@@ -72,6 +72,7 @@ pip install matplotlib numpy scipy Pillow opencv-python
 ## Functions Overview
 
 - `pull_image()`: Reads and displays a TIFF image named 'raw_image.tiff' and returns its data.
+  ![Alt text](raw_image.tiff)
 - `normalize_uint8(img, maxval, minval)`: Normalizes a uint16 image to a uint8 scale.
 - `min_max_normalization(img, maxval, minval)`: General normalization function.
 - `whitebalance(im, rgbScales)`: White balances an image using provided RGB scales.
