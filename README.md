@@ -1,3 +1,6 @@
+
+
+
 # Demosaicing RGB image with Python using Bilinear Interpolation
 
 Demosaicing is a digital image process used to reconstruct a full-color image from the incomplete color samples output by an image sensor overlaid with a color filter array (CFA). It is an essential step in the processing of raw images in any digital camera.
