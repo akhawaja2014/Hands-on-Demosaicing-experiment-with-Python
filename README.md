@@ -72,11 +72,25 @@ pip install matplotlib numpy scipy Pillow opencv-python
 ## Functions Overview
 
 - `pull_image()`: Reads and displays a TIFF image named 'raw_image.tiff' and returns its data.
-  ![Alt text](raw_image.tiff)
+  Here is the raw mosaiced image. It is how the camera sees the World. 
+  
+  ![Alt text](figures/RawImage.png)
+
+  If you zoom enough in on the image, You will find the mosaiced pattern. Each square is one of the three channels' pixel values measured.
+  Here is the zoomed image:
+
+  ![Alt text](figures/raw_image_zoomed.png)
+
+  
 - `normalize_uint8(img, maxval, minval)`: Normalizes a uint16 image to a uint8 scale.
+  The Raw image is captured by the camera in 16-bit format.  In a 16-bit image, each pixel can represent $2^{16}  = 65,536 $ different colors or shades. This provides a much larger space than 8-bit images (256 colors) and allows for more subtle variations in color and   tone.
 - `min_max_normalization(img, maxval, minval)`: General normalization function.
 - `whitebalance(im, rgbScales)`: White balances an image using provided RGB scales.
 - `bayer(im)`: Decodes an RGGB Bayer pattern image.
+   The Bayer pattern, also known as the Bayer filter, is a color filter array (CFA) used in many digital imaging devices, including digital cameras and smartphone cameras. It's named after its inventor, Bryce Bayer, who developed this pattern while working at Eastman     Kodak in the 1970s. The Bayer pattern is a common method for capturing and reproducing color in digital images. The Bayer pattern consists of a grid of color filters placed over the image sensor's pixels. Each pixel in the sensor is covered by one of these color       filters, which are typically red, green, or blue. The Bayer pattern usually consists of 50% green filters, 25% red filters, and 25% blue filters, arranged in a specific repeating pattern. The most common arrangement for a Bayer filter is as follows, where "R"          stands for red, "G" stands for green, and "B" stands for blue. Here is what the Bayer Color Filter Array (CFA) looks like:
+
+    ![Alt text](figures/Bayer_pattern.png)
+  
 - `bilinear(im)`: Applies bilinear interpolation demosaicing on an image.
 - Visualization functions like `display_raw_image(raw_image_path)`, `display_bayer_pattern(im)`, `display_red_channel(image)`, etc. are used to visualize various stages of the raw image processing.
 
