@@ -74,12 +74,12 @@ pip install matplotlib numpy scipy Pillow opencv-python
 - `pull_image()`: Reads and displays a TIFF image named 'raw_image.tiff' and returns its data.
   Here is the raw mosaiced image. It is how the camera sees the World. 
   
-  ![Alt text](figures/RawImage.png)
-
+  ![Alt text](https://github.com/akhawaja2014/Hands-on-Demosaicing-experiment-with-Python/blob/master/figures/RawImage.png)
+  
   If you zoom enough in on the image, You will find the mosaiced pattern. Each square is one of the three channels' pixel values measured.
   Here is the zoomed image:
 
-  ![Alt text](figures/raw_image_zoomed.png)
+  ![Alt text](https://github.com/akhawaja2014/Hands-on-Demosaicing-experiment-with-Python/blob/master/figures/raw_image_zoomed.png)
 
   
 - `normalize_uint8(img, maxval, minval)`: Normalizes a uint16 image to a uint8 scale.
@@ -89,10 +89,53 @@ pip install matplotlib numpy scipy Pillow opencv-python
 - `bayer(im)`: Decodes an RGGB Bayer pattern image.
    The Bayer pattern, also known as the Bayer filter, is a color filter array (CFA) used in many digital imaging devices, including digital cameras and smartphone cameras. It's named after its inventor, Bryce Bayer, who developed this pattern while working at Eastman     Kodak in the 1970s. The Bayer pattern is a common method for capturing and reproducing color in digital images. The Bayer pattern consists of a grid of color filters placed over the image sensor's pixels. Each pixel in the sensor is covered by one of these color       filters, which are typically red, green, or blue. The Bayer pattern usually consists of 50% green filters, 25% red filters, and 25% blue filters, arranged in a specific repeating pattern. The most common arrangement for a Bayer filter is as follows, where "R"          stands for red, "G" stands for green, and "B" stands for blue. Here is what the Bayer Color Filter Array (CFA) looks like:
 
-    ![Alt text](figures/Bayer_pattern.png)
+
+    The Bayer Pattern for the raw image looks like this. The intensities of the color represent the amount of light that has been captured by the sensor in that respective channel.
   
-- `bilinear(im)`: Applies bilinear interpolation demosaicing on an image.
+    ![Bayer Pattern](https://github.com/akhawaja2014/Hands-on-Demosaicing-experiment-with-Python/blob/master/figures/Bayer_pattern.png)
+
+    If you zoom this image, you can clearly see the Bayer Pattern.
+
+    ![Bayer Pattern zoomed](https://github.com/akhawaja2014/Hands-on-Demosaicing-experiment-with-Python/blob/master/figures/Bayer_pattern_zoomed.png)
+
 - Visualization functions like `display_raw_image(raw_image_path)`, `display_bayer_pattern(im)`, `display_red_channel(image)`, etc. are used to visualize various stages of the raw image processing.
+    Here we now plot each channel of bayer pattern seperately for understanding. Here is how Green Channel looks like. 
+
+    ![Green Channel](https://github.com/akhawaja2014/Hands-on-Demosaicing-experiment-with-Python/blob/master/figures/green_channel.png)
+
+    Here is the zoomed version of Green Channel.
+
+    ![Green Channel zoomed](https://github.com/akhawaja2014/Hands-on-Demosaicing-experiment-with-Python/blob/master/figures/green_channelzoomed.png)
+
+    Here is the Red Channel.
+
+    ![Red Channel](https://github.com/akhawaja2014/Hands-on-Demosaicing-experiment-with-Python/blob/master/figures/red_channel.png)
+
+    Here is the zoomed version of Red Channel.
+
+    ![Red Channel Zoomed](https://github.com/akhawaja2014/Hands-on-Demosaicing-experiment-with-Python/blob/master/figures/red_channel_zoomed.png)
+
+    Here is the Blue Channel.
+
+    ![Blue Channel](https://github.com/akhawaja2014/Hands-on-Demosaicing-experiment-with-Python/blob/master/figures/blue_channel.png)
+
+    Here is the zoomed version of Blue Channel.
+
+    ![Blue Channel Zoomed](https://github.com/akhawaja2014/Hands-on-Demosaicing-experiment-with-Python/blob/master/figures/blue_channel_zoomed.png)
+
+
+   
+- `bilinear(im)`: Applies bilinear interpolation demosaicing on an image.
+
+    Here is the image after Bilinear demosaicing.
+
+   ![demosaiced](https://github.com/akhawaja2014/Hands-on-Demosaicing-experiment-with-Python/blob/master/figures/demosaiked_image.png)
+
+   Here is the zoomed version of demosaiced image.
+
+  ![demosaiced zoom](https://github.com/akhawaja2014/Hands-on-Demosaicing-experiment-with-Python/blob/master/figures/demosaiked_zoom.png)
+  
+
 
 
 
