@@ -1,5 +1,5 @@
 
-[Linkedin](https://www.linkedin.com/in/arsalankhawaja/)                                                            [ResearchGate](https://www.researchgate.net/profile/Arsalan-Khawaja-4)      
+[Linkedin](https://www.linkedin.com/in/arsalankhawaja/)           [Twitter](https://twitter.com/akhawaja2014)                                                   [ResearchGate](https://www.researchgate.net/profile/Arsalan-Khawaja-4)      
 
 
 # Demosaicing RGB image with Python using Bilinear Interpolation
